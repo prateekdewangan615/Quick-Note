@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background:url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navbar{
+    background-color: rgb(125, 111, 103);
+    padding:15px;
+    font-size: 110%;
+    font-weight: 900;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 1px 1px 6px black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(255, 255, 156);
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+#newtask{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+#newtask input{
+    width: 70%;
+    padding:10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 110%;
+}
+#newtask input:focus{
+    outline: none;
+    border-color: blue;
+}
+#newtask button{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 110%;
+    color: white;
+    background-color: blue;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+#newtask button:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+
+}
+#tasks{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.task{
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    margin: 10px;
+    width: 70%;
+    background-color: white;
+    padding:10px;
+    font-weight: 700;
+    font-size: 110%;
+}
+.task button{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 100%;
+    color: white;
+    float: right;
+    background-color: red;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.task button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+@media (max-width:800px){
+    *{
+        font-size: 98%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    body{
+        background:url('bg4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+        opacity: 1;
+    }
+}
